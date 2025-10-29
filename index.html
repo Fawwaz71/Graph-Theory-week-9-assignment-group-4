@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online article Group 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Online article Group 4</h1>
+
+        <div class="group-members">
+            <strong>Group 4</strong><br>
+            Fawwaz Reynardio E.<br>
+            Ramasyamsi Ahmad Shabri<br>
+            M. Umar Rusjanto
+        </div>
+
+        <h2>Introduction: What is the Problem?</h2>
+        <p>
+            Urban landscapes such as streets, neighbourhoods, and cities can be examined as networks similar to biological systems, social interactions, or the Internet. A city can be visualised as a graph with roads and intersections creating a network of connections that affect mobility and accessibility.
+        </p>
+        <p>
+            There are difficulties when using the network technique in urban systems. The researchers have to make a decision:
+        </p>
+        <ul>
+            <li>How to represent streets and intersections: metric or topological distance</li>
+            <li>What kind of graph model best captures connectivity</li>
+            <li>How to correlate structural measures such as street connectivity with dynamic behaviors like traffic flow</li>
+        </ul>
+        <p>
+            The objective of the researcher was to investigate how the hidden structure of cities is revealed by two different kinds of graph: primal and dual graph.
+        </p>
+
+        <h2>Methodology: What Did They Do? How Did They Apply Planar/Dual Graph?</h2>
+        <p>
+            The authors represent each city’s street network in two ways, one of which is the Dual Graph. This conventional method is helpful for metric and geographical analysis and maintains geographic distance.
+        </p>
+
+        <h3>Dual Graph</h3>
+        <ul>
+            <li>Streets → Nodes</li>
+            <li>Intersections → Edges</li>
+            <li>Focuses on topological relationships: how streets connect to each other despite physical distance</li>
+        </ul>
+        <p>
+            The authors created a generalisation model known as Intersection Continuity Negotiation (ICN) to build the dual graph. Long or curving roads can be considered single, continuous nodes in the dual graph using this technique to determine the continuity of paths across many connected segments.  
+            Following the construction of the graphs, they analysed the structural features of the urban street networks using network analytic tools, including:
+        </p>
+        <ul>
+            <li>Clustering values</li>
+            <li>Degree distribution: counts the number of connections between streets</li>
+            <li>Variety: analyses whether high-degree streets usually connect with similar streets</li>
+            <li>Small-world metrics: measure the effectiveness of street connections across the city</li>
+        </ul>
+
+        <h2>Discussion: How Are the Results?</h2>
+        <p>
+            The results showed that, when analysed as dual graphs, urban street networks have many characteristics in common with other complex systems, including biological networks or the Internet. Specifically, the networks follow a power-law structure typical of self-organising systems, with most streets having few connections while a few major highways serve as hubs connecting many others.
+        </p>
+        <p>
+            Additionally, they show small-world characteristics: city networks, despite their complexity, allow short travel lengths between any two streets, indicating effective interaction. Unlike social networks, where highly connected hubs usually link with other hubs, urban networks exhibit a lack of variety. Major city roads frequently connect to smaller local streets, showing a unique urban connectivity pattern.
+        </p>
+        <p>
+            These results suggest that dual graph analysis offers a deeper comprehension of the development and operation of cities. The dual depiction emphasises the hierarchical and self-organising character of urban growth by moving away from geometric distances and focussing on interaction. By revealing the hidden topological structure of urban networks, this method enhances the primordial (planar) perspective, which shows the physical geometry of streets. When combined, the dual and primal viewpoints provide strong tools for modelling, evaluating, and enhancing the functionality and design of modern urban systems.
+        </p>
+        <img src="dual_graph2.png" alt="">
+        <i>*image just for visualisation does not correlate to the report</i>
+        <h2>References</h2>
+        <p class="references">
+            Porta, S., Crucitti, P., & Latora, V. (2006). The network analysis of urban streets: a dual approach. <em>Physica A: Statistical Mechanics and its Applications, 369(2), 853–866.</em> <br>
+            "https://www.sciencedirect.com/science/article/pii/S0378437105009240"
+        </p>
+        <p class="references">https://transportgeography.org/contents/methods/graph-theory-definition-properties/dual-graph/</p>
+    </div>
+
+</body>
+</html>
